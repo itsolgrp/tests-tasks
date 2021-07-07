@@ -1,5 +1,5 @@
 Тестовые задания для разработчиков
 ---
 
-- [Frontend Developer](https://github.com/itsolgrp/tests-tasks/tree/master/test-work-for-frontend-developer)
-- [Fullstack Developer](https://github.com/itsolgrp/tests-tasks/tree/master/test-work-for-fullstack-developer)
+- [Frontend Developer](https://github.com/itsolgrp/tests-tasks/tree/master/test-task-for-frontend-developer)
+- [Fullstack Developer](https://github.com/itsolgrp/tests-tasks/tree/master/test-task-for-fullstack-developer)
