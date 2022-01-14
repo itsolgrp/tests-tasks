@@ -9,7 +9,7 @@
 - Работоспособность в актуальной версии Google Chrome
 - Использование актуальной версии [Tailwind CSS](https://tailwindcss.com/)
 - Результат необходимо залить на Git для проверки
-- Остальное на твоё усмотрение
+- Остальное на твоё усмотрение (использование VueJS или ReactJS будет плюсом)
 
 ## Макет (Figma)
 https://www.figma.com/file/rLV6MVF2wsyC3eSCneItzb/CarBuy?node-id=0%3A1
