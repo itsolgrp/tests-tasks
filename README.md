@@ -2,4 +2,3 @@
 ---
 
 - [Frontend Developer](https://github.com/itsolgrp/tests-tasks/tree/master/test-task-for-frontend-developer)
-- [Fullstack Developer](https://github.com/itsolgrp/tests-tasks/tree/master/test-task-for-fullstack-developer)
