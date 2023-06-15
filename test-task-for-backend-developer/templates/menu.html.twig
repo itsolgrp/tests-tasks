@@ -1,0 +1,48 @@
+{% extends "base.html.twig" %}
+
+{% block head %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/touch-sideswipe.css') }}">
+    <script src="{{ asset('js/touch-sideswipe.js') }}"></script>
+    <script src="{{ asset('js/main.js')}}"></script>
+{% endblock %}
+
+{% block menu %}
+    <nav id="desktop-nav" class="d-flex justify-content-between navbar fixed-top">
+        <div class="d-flex align-items-baseline">
+            <img src="{{ asset('img/logo.png') }}" width="130">
+        </div>
+
+        <a class="btn btn-outline-primary" href="{{ path('logout') }}"> Välju </a>
+    </nav>
+
+    <nav id="desktop-menu">
+        <div id="links-box">
+            <a class="btn-expand-collapse"><span class="fas fa-align-left"></span></a>
+            <div id="desktop-menu-links-box">
+                {% block menuLinks %}{% endblock %}
+            </div>
+        </div>
+    </nav>
+
+    <nav id="mobile-nav" class="fixed-top d-flex justify-content-between">
+        <a id="sidebarCollapse" class=" d-flex align-items-center"><span class="fas fa-align-left"></span></a>
+        <a class="btn btn-outline-secondary" href="{{ path('logout') }}"> Välju </a>
+    </nav>
+
+    <nav id="sidebar">
+        <div id="mobile-links-box">
+            {% block mobileMenuLinks %}{% endblock %}
+        </div>
+    </nav>
+
+{% endblock %}
+
+{% block body %}
+    <div class="main-content">
+        <div class="container">
+            {% block mainContent %}{% endblock %}
+        </div>
+    </div>
+{% endblock %}
+

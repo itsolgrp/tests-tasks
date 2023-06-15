@@ -1,0 +1,18 @@
+{% extends 'menu.html.twig' %}
+
+{% set route = app.request.get('_route') %}
+
+{% block menuLinks %}
+    {% if is_granted("ROLE_OWNER") %}
+       <a href="{{ path('user') }}" class="menu-link {% if route == 'user' %}active{% endif %}"><span class="menu-link-icon fas fa-user"></span><span class="nav-label">Töötaja</span></a>
+    {% endif %}
+
+{% endblock %}
+
+{% block mobileMenuLinks %}
+
+    {% if is_granted("ROLE_OWNER") %}
+        <a href="{{ path('user') }}" class="mobile-menu-link {% if route == 'user' %}active{% endif %}"><span class="menu-link-icon fas fa-user"></span><span class="nav-label">Töötaja</span></a>
+    {% endif %}
+
+{% endblock %}

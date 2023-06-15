@@ -1,0 +1,17 @@
+{% extends "menu/menu_links.html.twig" %}
+
+{% block mainContent %}
+    <div class="info-block shadow">
+        <h5 class="info-box-title"> {{ user.name }} {{ user.lastname }}</h5>
+        <div>
+            <p> <span class="font-weight-bold">Kood:</span> {{ user.code }} </p>
+            <p> <span class="font-weight-bold">Nimi:</span> {{ user.name }} {{ user.lastname }} </p>
+            <p> <span class="font-weight-bold">Kasutajanimi:</span> {{ user.username }} </p>
+            <p> <span class="font-weight-bold">Amet:</span> {{ user.position }}</p>
+            <p> <span class="font-weight-bold">Isikukood:</span> {{ user.personalCode }}</p>
+            <p> <span class="font-weight-bold">Telefon:</span> {{ user.phone }}</p>
+            <p> <span class="font-weight-bold">Email:</span> {{ user.email }}</p>
+            <p> <span class="font-weight-bold">Sünnipäev:</span> {{ user.birthday|date("d.m.Y") }}</p>
+        </div>
+    </div>
+{% endblock %}
